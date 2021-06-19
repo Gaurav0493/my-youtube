@@ -1,0 +1,38 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.App {
+  text-align: center;
+}
+
+:root {
+	--gradient-background: linear-gradient(
+		90deg,
+		#1a042c,
+		#231b3f,
+		#2e197c,
+		#2e197c,
+		#2f0642
+	);
+	--shadow-brandname: 0.03em 0.03em #ffee00, -0.03em -0.03em #ff0080,
+		-0.03em 0.03em #dd7cf5, 0.03em -0.03em #00ffc8;
+	--color-item-text: #120b2c;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: var(--gradient-background);
+	font-family: sans-serif;
+}
+
+.brandname {
+	color: #323297;
+	text-shadow: var(--shadow-brandname);
+	font-family: "Staatliches", cursive;
+	font-size: clamp(5rem, 20vw, 10rem);
+	text-align: center;
+}

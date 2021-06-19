@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+	--gradient-background: linear-gradient(
+		90deg,
+		#1a042c,
+		#231b3f,
+		#2e197c,
+		#2e197c,
+		#2f0642
+	);
+	--shadow-brandname: 0.03em 0.03em #ffee00, -0.03em -0.03em #ff0080,
+		-0.03em 0.03em #dd7cf5, 0.03em -0.03em #00ffc8;
+	--color-item-text: #120b2c;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: var(--gradient-background);
+	font-family: sans-serif;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 980px) 1fr;
+}
+
+/* HEADER */
+/* ====== */
+
+.header {
+	grid-column: 2/3;
+	grid-row: 1;
+	/* Header flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: left;
+	text-align: flex-start;
+}
+
+
+/* MAIN */
+/* ==== */
+
+.main {
+	/* Main Flexbox */
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.main .item {
+	width: auto;
+	margin: 10px;
+	padding: 10px;
+	background-color: #000000;
+	box-shadow: 4px 4px #ff0080, 4px -4px #00ffc8;
+	flex-shrink: 0;
+	color: var(--color-item-text);
+	height: auto;
+    display: flex;
+}
+
+/* MAIN > ITEM */
+/* =========== */
+
+.item > h3 {
+	font-family: "Staatliches", cursive;
+	/* color: #ff0080; */
+	color: var(--color-item-text);
+	font-size: 3rem;
+}
+
+.description {
+	margin: 1.5em 1.5em;
+	font-size: 0.85rem;
+    color: #ffee00;
+    text-align: left;
+}
+
+.description p{
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.video-details{
+    display: flex;
+}
+
+.video-details .left{
+    width: auto;
+    text-align: left;
+}
+
+.video-details .right{
+    text-align: right;
+    width: 20rem;
+}
+
+.content {
+	font-family: "Staatliches", cursive;
+	font-size: 1.5rem;
+	color: #ff0080;
+}
+
+.special {
+	font-family: "Staatliches", cursive;
+	font-size: 1.25rem;
+}
+
+/* MAIN > ITEM > FORM-CASE*/
+/* ====================== */
+
+.item .righ-content{
+    padding: 5px 5px;;
+}
+
+
+.item :hover {
+	color: #00ffc8;
+    cursor: pointer;
+}
+
+/*Pictures*/
+
+.thumbnail {
+	box-shadow: 0.2em 0.2em #00ffc8, -0.2em -0.2em #ff0080;
+	position: relative;
+}
