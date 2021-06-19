@@ -1,4 +1,4 @@
- ## Trppy youtube app
+ ## Trippy youtube app
 * Basic react hook
 * Test cases
 * Cool/trippy Css
